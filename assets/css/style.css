@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    
+}
+.header{
+    height: 50px;
+    padding:10px;
+    border-bottom:1px solid grey;
+}
+.header_logo{
+    width:20%;
+    float: left;
+}
+.header_title{
+    width:70%;
+    text-align:center;
+    float: left;
+}
+.header_button{
+    width:10%;
+    float: left;
+}
+.logo{
+    width:85px;
+}
+.section{
+    
+}
+.task_option{
+    height:50px;
+}
+.grid_table{
+    margin-left:60px;
+    border-collapse: collapse;
+    width: 90%;
+}
+.grid_table{
+    padding:10px;
+}
+.grid_table td{
+    text-align:center;
+    padding:10px;
+}

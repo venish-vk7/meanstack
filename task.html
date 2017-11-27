@@ -1,0 +1,50 @@
+<html ng-app="taskManagent">
+    <head>
+        <title>
+            task manager
+        </title>
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <div class="container" ng-controller="dashboardController">
+            <div class="header">
+                <div class="header_logo">
+                    <img src="assets/images/vThink.png" class="logo" />
+                </div>
+                <div class="header_title">
+                    <h2>Task Management</h2>
+                </div>
+                <div class="header_button">
+                    <button>logout</button>
+                </div>
+            </div>
+            <div class="section">
+                <div class="task_option">
+
+                </div>
+                <div class="task_grid">
+                    <table class="grid_table" border="1">
+                        <tr>
+                            <td>No</td>
+                            <td>Task Name</td>
+                            <td>Date</td>
+                            <td>Status</td>
+                            <td>Options</td>
+                        </tr>
+                        <tr ng-repeat="x in data">
+                            <td>{{x.no}}</td>
+                            <td>{{x.name}}</td>
+                            <td>{{x.date}}</td>
+                            <td>{{x.status}}</td>
+                            <td>
+                                <span><button>edit</button></span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="assets/js/vendors/angular.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</html>
